@@ -45,7 +45,7 @@
      <enum>QTabWidget::Rounded</enum>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="commonTab">
      <attribute name="title">
@@ -423,7 +423,7 @@
        <item row="6" column="0">
         <widget class="QCheckBox" name="tinyGCheckBox">
          <property name="toolTip">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Check this if you are using tinyG controller. This causes pcb2gcode to generate tinyG compatible gcode files ( might work with other low-end controllers )&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Check this if you are using tinyG controller. This causes pcb2gcode to generate tinyG compatible gcode files ( might work with other low-end controllers ). Checking this option also sets --nog81&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
          <property name="text">
           <string>tinyg</string>

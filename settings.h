@@ -30,7 +30,7 @@
 #define PCB2GCODE_EXECUTABLE PCB2GCODE_COMMAND_NAME
 #endif
 
-#define PCB2GCODE_GUI_VERSION 0.1
+#define PCB2GCODE_GUI_VERSION 0.11
 
 static const char *about_pcb2gcode_str = "pcb2gcode v%1<br>"
                                          "<a href='https://github.com/pcb2gcode/pcb2gcode'>https://github.com/pcb2gcode/pcb2gcode</a><br>";

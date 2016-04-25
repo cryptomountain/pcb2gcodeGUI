@@ -131,7 +131,7 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->optimiseCheckBox, SIGNAL(toggled(bool)), ui->bridgesDoubleSpinBox, SLOT(setEnabled(bool)));
     connect(ui->optimiseCheckBox, SIGNAL(toggled(bool)), ui->zbridgesDoubleSpinBox, SLOT(setEnabled(bool)));
     connect(ui->optimiseCheckBox, SIGNAL(toggled(bool)), ui->bridgesnumSpinBox, SLOT(setEnabled(bool)));
-    //connect(ui->tinyGCheckBox, SIGNAL(toggled(bool)), ui->tinyGCheckBox, SLOT(setChecked(bool)));
+    connect(ui->tinyGCheckBox, SIGNAL(toggled(bool)), ui->nog81CheckBox, SLOT(setChecked(bool)));
     connect(ui->softwareComboBox, SIGNAL(currentTextChanged(QString)), this, SLOT(updateAlCustomEnableState(QString)));
 
     connect(ui->startPushButton, SIGNAL(clicked()), this, SLOT(startPcb2gcode()));
