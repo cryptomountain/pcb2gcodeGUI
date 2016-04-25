@@ -65,6 +65,7 @@ MainWindow::MainWindow(QWidget *parent) :
     args[ COMMONARGS ].insert("dpi", ui->dpiSpinBox);
     args[ COMMONARGS ].insert("tile-x", ui->tilexSpinBox);
     args[ COMMONARGS ].insert("tile-y", ui->tileySpinBox);
+    args[ COMMONARGS ].insert("tinyg", ui->tinyGCheckBox);
 
     args[ MILLARGS ].insert("zwork", ui->zworkDoubleSpinBox);
     args[ MILLARGS ].insert("mill-feed", ui->millfeedSpinBox);
@@ -130,6 +131,7 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->optimiseCheckBox, SIGNAL(toggled(bool)), ui->bridgesDoubleSpinBox, SLOT(setEnabled(bool)));
     connect(ui->optimiseCheckBox, SIGNAL(toggled(bool)), ui->zbridgesDoubleSpinBox, SLOT(setEnabled(bool)));
     connect(ui->optimiseCheckBox, SIGNAL(toggled(bool)), ui->bridgesnumSpinBox, SLOT(setEnabled(bool)));
+    //connect(ui->tinyGCheckBox, SIGNAL(toggled(bool)), ui->tinyGCheckBox, SLOT(setChecked(bool)));
     connect(ui->softwareComboBox, SIGNAL(currentTextChanged(QString)), this, SLOT(updateAlCustomEnableState(QString)));
 
     connect(ui->startPushButton, SIGNAL(clicked()), this, SLOT(startPcb2gcode()));

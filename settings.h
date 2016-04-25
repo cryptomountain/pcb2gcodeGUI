@@ -23,7 +23,7 @@
 #include <QObject>
 
 #ifdef Q_OS_WIN
-#define PCB2GCODE_COMMAND_NAME "pcb2gcode.exe"
+#define PCB2GCODE_COMMAND_NAME ".libs/pcb2gcode.exe"
 #define PCB2GCODE_EXECUTABLE PCB2GCODE_COMMAND_NAME
 #else
 #define PCB2GCODE_COMMAND_NAME "pcb2gcode"
@@ -41,9 +41,9 @@ static const char *manual_link = "https://github.com/pcb2gcode/pcb2gcode/wiki/Ma
 
 static const char *default_config_filename = "/default_millproject";
 
-static const char *gerber_file_filter = "Gerber files (*.gbr *.gtl *.gtp *.gto *.gbs *.gts *.gbl *.gml);;All types (*.*)";
-static const char *excellon_file_filter = "Excellon files (*.drl *.drd);;All types (*.*)";
-static const char *gcode_file_filter = "G-Code files (*.nc *.cnc *.ncc *.ecs *.ngc *.fan *.hnc);;All types (*.*)";
+static const char *gerber_file_filter = "Gerber files (*.gbl *.gbr *.gtl *.gtp *.gto *.gbs *.gts *.gml);;All types (*.*)";
+static const char *excellon_file_filter = "Excellon files (*.drl *.drd *.txt);;All types (*.*)";
+static const char *gcode_file_filter = "G-Code files (*.nc *.cnc *.ncc *.ecs *.ngc *.fan *.hnc *.gcode);;All types (*.*)";
 static const char *text_file_filter = "Text files (*.*)";
 
 #endif // SETTINGS
